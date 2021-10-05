@@ -1,4 +1,6 @@
-const generatePage = (userName, githubName) => {
+
+  module.exports = templateData => {
+    console.log(templateData);
     return`
     <!DOCTYPE html> 
     <html lang="en"> 
@@ -10,11 +12,11 @@ const generatePage = (userName, githubName) => {
     </head>
   
     <body>
-      <h1>${userName}</h1>
-      <h2><a href="https://github.com/${githubName}">Github</a></h2>
+      <h1>${templateData.name}</h1>
+      <h2><a href="https://github.com/${templateData.github}">Github</a></h2>
     </body>
     </html>
         `;
 };
 
-module.exports= generatePage;  
+//module.exports= generatePage;  
