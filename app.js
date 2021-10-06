@@ -87,7 +87,7 @@ const promptProject = portfolioData => {
         },
         {
             type: 'input',
-            name: 'dscription',
+            name: 'description',
             message: 'Provide a description of the project (Require)',
             validate: projectDes => {
                 if (projectDes) {
